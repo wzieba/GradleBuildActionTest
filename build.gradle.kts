@@ -1,10 +1,7 @@
 plugins {
-    kotlin("jvm")
     application
+    id("io.gitlab.arturbosch.detekt")
 }
-
-group = "org.example"
-version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
@@ -12,9 +9,4 @@ repositories {
 
 dependencies {
     implementation("javax.inject:javax.inject:1")
-    testImplementation(kotlin("test"))
-}
-
-kotlin {
-    jvmToolchain(11)
 }
